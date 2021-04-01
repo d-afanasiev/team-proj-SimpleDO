@@ -1,12 +1,12 @@
 {
-  "name": "parcel-project-template",
+  "name": "team-proj-SimpleDO",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://d-afanasiev.github.io/team-proj-SimpleDO",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /team-proj-SimpleDO/"
   },
   "repository": {
     "type": "git",

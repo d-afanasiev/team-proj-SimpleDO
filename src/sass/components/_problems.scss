@@ -2,6 +2,10 @@
   background-color: var(--main-color);
   position: relative;
   height: 545px;
+
+  @media screen and (min-width: 768px) {
+    height: 340px;
+  }
 }
 
 .problem__title {
@@ -13,6 +17,11 @@
   color: var(--main-background-color);
   padding-top: 50px;
   margin: 0 20px 27px 20px;
+  @media screen and (min-width: 768px) {
+    margin: 0 158px 25px 42px;
+    font-size: 26px;
+    line-height: 1.3;
+  }
 }
 
 .problem__span {
@@ -23,6 +32,13 @@
   counter-reset: section;
   padding: 25px 14px 20px 30px;
   margin: 0;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -8px;
+    margin-left: -11px;
+    padding: 30px 109px 26px 94px;
+  }
 }
 
 .problem-container {
@@ -31,6 +47,13 @@
   margin-left: 20px;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   position: absolute;
+
+  max-width: 400px;
+  @media screen and (min-width: 768px) {
+    max-width: 688px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
 }
 
 .problem-list__item {
@@ -51,5 +74,14 @@
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 5px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 11px;
+    margin-top: 8px;
+    flex-basis: calc((100% - 4 * 11px) / 2);
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }

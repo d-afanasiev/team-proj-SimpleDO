@@ -10,7 +10,7 @@
   font-size: 26px;
   line-height: 1.23077;
   letter-spacing: 0.04em;
-  color: #111518;
+  color: var(--main-color);
 
   &__first-line {
     display: inline-flex;
@@ -37,7 +37,7 @@
   }
 
   &__hell-ru {
-    color: #FF6B09;   
+    color: var(--orange-color-text);
   }
 }
 
@@ -65,5 +65,5 @@
 }
 
 .logo--invert {
-  color: #ffffff;
+  color: var(--main-background-color);
 }

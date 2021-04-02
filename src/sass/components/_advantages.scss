@@ -12,13 +12,14 @@
   // width: 216px;
   // width: 100%;
   margin: 0 auto;
+  // padding: 0 32px;
   flex-direction: column;
   // align-items: center;
 }
 
 .advantages-list__item {
   display: flex;
-  // width: 100%;
+  width: 216px;
   align-items: center;
   // justify-content: space-between;
 }
@@ -28,8 +29,7 @@
 }
 
 .advantages__icon {
-  display: flex;
-  // width: fit-content;
+  // display: flex;
   // height: auto;
 }
 
@@ -37,11 +37,11 @@
   margin: 0;
   padding: 0;
   margin-left: 10px;
-  width: 146px;
+  max-width: 146px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
-  display: inline-flex;
+  // display: inline-flex;
   // align-items: center;
   letter-spacing: 0.08em;
   

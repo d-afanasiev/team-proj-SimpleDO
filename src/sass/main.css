@@ -150,31 +150,58 @@ button {
   color: var(--main-background-color);
 }
 
+.advantages {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.advantages .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .advantages-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .advantages-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.advantages-list__text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.43;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.advantages-list__item:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.advantages__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages-list__text {
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  width: 146px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   letter-spacing: 0.08em;
   color: var(--main-color);
 }

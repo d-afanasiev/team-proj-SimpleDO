@@ -202,6 +202,14 @@ button {
           align-items: center;
 }
 
+@media screen and (min-width: 1280px) {
+  .advantages-list__item {
+    width: 448px;
+    height: 102px;
+    position: relative;
+  }
+}
+
 .advantages-list__item:not(:last-of-type) {
   margin-bottom: 30px;
 }
@@ -209,6 +217,21 @@ button {
 @media screen and (min-width: 768px) {
   .advantages-list__item:not(:last-of-type) {
     margin-bottom: 0;
+  }
+}
+
+.advantages__icon--desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages__icon {
+    display: none;
+  }
+  .advantages__icon--desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -229,6 +252,14 @@ button {
     font-size: 20px;
     line-height: 1.649;
     letter-spacing: 0.08em;
+    max-width: 366px;
+    height: 66px;
+    position: absolute;
+    top: 50%;
+    left: 82px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin: 0;
   }
 }
 

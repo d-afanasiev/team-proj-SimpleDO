@@ -1,0 +1,69 @@
+.logo {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.23077;
+  letter-spacing: 0.04em;
+  color: #111518;
+
+  &__first-line {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  &__hell {
+    margin-right: 4px;
+  }
+  
+  &__en {
+    margin-left: 4px;
+  }
+
+  &__second-line {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 3px;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  &__hell-ru {
+    color: #FF6B09;   
+  }
+}
+
+.logo--mobile {
+  font-size: calc(26px * 0.64); // подобрал
+  // line-height: 1.23077;
+  // letter-spacing: 0.04em;
+
+  .logo__hell {
+    margin-right: calc(4px * 0.64); // подобрал
+  }
+  
+  .logo__en {
+    margin-left: calc(4px * 0.64); // подобрал
+  }
+
+  .logo__second-line {
+    margin-top: calc(3px * 0.64); // подобрал
+    font-size: calc(8px * 0.64); // подобрал
+  }
+
+  .logo__hell-ru {
+    color: currentColor;
+  }
+}
+
+.logo--invert {
+  color: #ffffff;
+}

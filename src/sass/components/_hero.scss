@@ -7,6 +7,10 @@
     @media screen and (min-width: 768px) {
       background-size: 100% 100%;
     }
+
+    @media screen and (min-width: 1280px) {
+      background-size: 100% 160%;
+    }
 }
 
 .hero__container {
@@ -19,6 +23,10 @@
   @media screen and (min-width: 768px) {
     padding-left: 20px;
   }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 140px;
+  }
 }
 
 .hero__offer--box {
@@ -26,6 +34,10 @@
 
   @media screen and (min-width: 768px) {
     width: 332px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 600px;
   }
 }
 
@@ -41,6 +53,14 @@
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.30;
+    padding-top: 70px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 56px;
+    line-height: 1.29;
+    padding-top: 125px;
+    margin-bottom: 24px;
   }
 }
 
@@ -53,6 +73,11 @@
   color: var(--secondary-color-text);
   letter-spacing: 0.08em;
 
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.65;
+  }
+
 }
 
 .hero__subtext {
@@ -62,6 +87,12 @@
   font-size: 14px;
   line-height: 1.571;
   letter-spacing: 0.08em;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.65;
+    margin-bottom: 40px;
+  }
 }
 
 .hero__subtext--orange {
@@ -88,14 +119,22 @@
     display: inline-block;
     
   }
+
+  @media screen and (min-width: 1280px) {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    width: 354px;
+    padding: 26px 25px ;
+  }
 }
 
-// .hero__picture {
-//   @media screen and (min-width: 768px) {
-//     padding-right: 0px;
-//   }
+.hero__picture {
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+  }
 
-// }
+}
 
 .hero__img {
     padding-top: 30px;
@@ -106,6 +145,12 @@
 
     @media screen and (min-width: 768px) {
       max-width: 376px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 617px;
+      padding-bottom: 0px;
+      padding-top: 60px;
     }
     
 }

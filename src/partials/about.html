@@ -1,31 +1,32 @@
 <section class="about container">
     <h2 class="about__title">Преподаватель</h2>
     <div class="about__box">
-      <img class="about__photo"
-        srcset="./images/about-teacher-mobile.jpg 1x 243w, ./images/about-teacher-mobile@2x.jpg 2x 243w"
-        src="./images/about-teacher-mobile.jpg" alt="elena-moreva-photo" loading="lazy">
-      <div>
+      <div class="about__photo-box">
+        <img class="about__photo" 
+            srcset="./images/about-teacher-mobile.jpg 243w 1x, ./images/about-teacher-mobile@2x.jpg 243w 2x,
+                ./images/about-teacher-desktop.jpg 530w 1x, ./images/about-teacher-desktop@2x.jpg 530w 2x"
+            sizes="(min-width: 1280px) 530px, (max-width: 1279px) 243px"
+            src="./images/about-teacher-mobile.jpg" alt="elena-moreva-photo" loading="lazy">
+      </div>  
+      <div class="about__info-box">
         <h3 class="about__subtitle">Елена Морева</h3>
         <ul class="about__list">
-            <li class="about__item first">
+            <li class="about__item">
                 <svg class="about__check">
                     <use href="./images/sprite.svg#about-check"></use>
                 </svg>
-                <!-- <img class="about__check" src="./images/about-check.svg" alt="check"> -->
                 <p class="about__paragraph">Опыт подготовки учеников к ВНО - 6 лет</p>
             </li>
             <li class="about__item">
                 <svg class="about__check">
                     <use href="./images/sprite.svg#about-check"></use>
                 </svg>
-                <!-- <img class="about__check" src="./images/about-check.svg" alt="check"> -->
                 <p class="about__paragraph">Собственный результат сдачи ВНО - 197 баллов 2 года подряд</p>
             </li>
             <li class="about__item">
                 <svg class="about__check">
                     <use href="./images/sprite.svg#about-check"></use>
                 </svg>
-                <!-- <img class="about__check" src="./images/about-check.svg" alt="check"> width="17.08px" height="14px"-->
                 <p class="about__paragraph">Сдала на отлично международный аналог ВНО - Кембриджский PET (Preliminary
                     English
                     Test)</p>
@@ -44,6 +45,5 @@
         </div>
         <a class="about__link" href="#">Cambrige English Entry Level Certificate</a>
       </div>
-    </div>
-     
+    </div>    
 </section>

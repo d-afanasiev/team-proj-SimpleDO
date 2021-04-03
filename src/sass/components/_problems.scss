@@ -10,6 +10,9 @@
   @media screen and (min-width: 1280px) {
     padding-top: 100px;
     padding-bottom: 270px;
+    background-image: url(../images/problems-fire.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom 0;
   }
 }
 
@@ -80,15 +83,14 @@
 
 .line:before {
   content: '';
-  width: 1.563rem;
-  height: 0.125rem;
+  width: 25px;
+  height: 3px;
   top: 50%;
-  left: -2.188rem;
   transform: translateY(-50%);
   background-color: var(--orange-color-text);
   position: static;
   display: block;
-  margin-bottom: 0.938rem;
+  margin-bottom: 20px;
 }
 .problem__text {
   margin: 0;
@@ -135,7 +137,7 @@
     position: absolute;
     bottom: 100%;
     transform: translateY(50%);
-    left: 2.188rem;
+    left: 35px;
     color: var(--orange-color-text);
     font-style: normal;
     font-weight: bold;

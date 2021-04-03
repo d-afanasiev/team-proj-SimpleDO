@@ -150,6 +150,75 @@ button {
   color: var(--main-background-color);
 }
 
+.hero {
+  background-image: url("../images/hero-Vector.png");
+  background-position: left bottom;
+  background-size: 100% 25%;
+  background-repeat: no-repeat;
+}
+
+.hero__offer {
+  width: 280px;
+}
+
+.hero__title {
+  padding-top: 50px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
+}
+
+.hero__text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.571;
+  color: var(--secondary-color-text);
+  letter-spacing: 0.08em;
+}
+
+.hero__subtext {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.571;
+  letter-spacing: 0.08em;
+}
+
+.hero__subtext--orange {
+  color: var(--orange-color-text);
+}
+
+.hero__btn {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 260px;
+  border: none;
+  background-color: var(--orange-color-text);
+  color: var(--main-background-color);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 14px 5px;
+}
+
+.hero__img {
+  padding-top: 30px;
+  padding-bottom: 47px;
+  max-width: 208px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .problem {
   background-color: var(--main-color);
   position: relative;
@@ -272,25 +341,83 @@ button {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1280px) {
+  .about__title {
+    font-weight: 800;
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.about__photo-box {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .about__photo-box {
+    margin: 0 41px 0 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__photo-box {
+    min-width: 530px;
+    height: 667px;
+    margin: 0 31px 0 0;
+  }
+}
+
+.about__photo {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .about__info-box {
+    width: 401px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__info-box {
+    max-width: 640px;
+  }
+}
+
 .about__subtitle {
   font-weight: 800;
   font-size: 20px;
   line-height: 130%;
   letter-spacing: 0.03em;
   color: currentColor;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--secondary-color-text);
-  margin-bottom: 20px;
+  margin: 0 0 10px 0;
 }
 
-.about__photo {
-  display: block;
-  max-width: 243px;
-  margin-bottom: 20px;
+@media screen and (min-width: 1280px) {
+  .about__subtitle {
+    font-size: 30px;
+    margin: 0 0 15px 0;
+  }
 }
 
 .about__list {
+  border-top: 1px solid var(--secondary-color-text);
+  padding-top: 20px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  .about__list {
+    padding-top: 30px;
+    margin: 0 0 33px 0;
+  }
 }
 
 .about__list :last-child {
@@ -313,6 +440,13 @@ button {
   margin-right: 8.92px;
 }
 
+@media screen and (min-width: 1280px) {
+  .about__check {
+    max-width: 24.41px;
+    height: 20px;
+  }
+}
+
 .about__paragraph {
   font-weight: 600;
   font-size: 14px;
@@ -321,10 +455,23 @@ button {
   margin: 0;
 }
 
+@media screen and (min-width: 1280px) {
+  .about__paragraph {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 .about__biography {
   position: relative;
   padding-top: 20px;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1280px) {
+  .about__biography {
+    padding-top: 30px;
+  }
 }
 
 .about__biography :first-child::before {
@@ -336,6 +483,12 @@ button {
   height: 2px;
   background-color: var(--orange-color-text);
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  .about__biography :first-child::before {
+    width: 24.41px;
+  }
 }
 
 .about__biography :last-child {
@@ -350,6 +503,13 @@ button {
   margin: 0 0 20px 0;
 }
 
+@media screen and (min-width: 1280px) {
+  .about__biography-part {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
 .about__link {
   font-weight: 500;
   font-size: 12px;
@@ -360,8 +520,11 @@ button {
   outline: none;
 }
 
-.about__link :visited {
-  color: var(--orange-color-text);
+@media screen and (min-width: 1280px) {
+  .about__link {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 .about__link :visited {

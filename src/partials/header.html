@@ -1,6 +1,15 @@
 <section class="header">
 <div class="container header__container">
-<include src="./partials/logo--mobileinvert.html"></include>
+  <include src="./partials/logo.html"></include>
+<nav class="header__container__menu">
+  <ul class="header__container__menu_list">
+    <li class="header__container__menu__item"> <a href="#" class="header__container__menu__link">Программа обучения</a></li>
+    <li class="header__container__menu__item"> <a href="#" class="header__container__menu__link">О нас</a></li>
+    <li class="header__container__menu__item"> <a href="#" class="header__container__menu__link">Варианты обучения</a></li>
+    <li class="header__container__menu__item"> <a href="#" class="header__container__menu__link">Контакты</a></li>
+</ul>
+</nav>
+<button type="button" class="menu__button header__container__menu__button">Консультация по телефону</button>
 
 <!------Кнопка мобильного меню----->
 <button type="button"
@@ -28,6 +37,7 @@ aria-controls="mobile-menu"
   </button>
 
   <nav class="mobile-menu">
+    <ul>
       <li class="mobile-menu__item"> <a href="#" class="mobile-menu__link">Программа обучения</a></li>
       <li class="mobile-menu__item"> <a href="#" class="mobile-menu__link">О нас</a></li>
       <li class="mobile-menu__item"> <a href="#" class="mobile-menu__link">Варианты обучения</a></li>
@@ -35,7 +45,7 @@ aria-controls="mobile-menu"
   </ul>
 </nav>
 <div class="center">
-<button type="button" class="button mobile-menu__button">Консультация по телефону</button>
+<button type="button" class="menu__button menu__button--mobile">Консультация по телефону</button>
 </div>
 </div>
 

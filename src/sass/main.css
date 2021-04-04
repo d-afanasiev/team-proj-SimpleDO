@@ -162,10 +162,6 @@ button {
   }
 }
 
-.logo--invert {
-  color: var(--main-background-color);
-}
-
 @media screen and (max-width: 1279px) {
   .header__container {
     -webkit-box-pack: justify;

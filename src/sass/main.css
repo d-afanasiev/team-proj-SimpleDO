@@ -660,11 +660,6 @@ button {
   color: var(--secondary-color-text);
 }
 
-.body {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-}
-
 .program {
   margin: 0 auto;
   background-color: var(--main-color);

@@ -686,7 +686,6 @@ button {
   padding-left: 20px;
   padding-right: 20px;
   min-width: auto;
-  outline: 1px solid yellow;
 }
 
 .module {
@@ -710,7 +709,7 @@ button {
 
 .module:last-child::after {
   content: "";
-  background-image: url("./src/images/program-img.jpg");
+  background-image: url("../images/program-img.jpg");
   width: 176px;
   height: 110px;
   position: absolute;
@@ -731,7 +730,7 @@ button {
 }
 
 .module__title::before {
-  content: url("/src/images/program-ellipse.svg");
+  content: url("../images/program-ellipse.svg");
   position: relative;
   margin-right: -12px;
   left: -32px;
@@ -780,7 +779,7 @@ button {
   line-height: 130%;
   letter-spacing: 0.03em;
   color: currentColor;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 
 @media screen and (min-width: 1280px) {
@@ -799,6 +798,7 @@ button {
 
 .about__photo-box {
   margin-bottom: 20px;
+  width: 243px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -809,9 +809,7 @@ button {
 
 @media screen and (min-width: 1280px) {
   .about__photo-box {
-    min-width: 530px;
-    height: 667px;
-    max-width: 630px;
+    width: 530px;
     margin: 0 31px 0 0;
   }
 }
@@ -824,7 +822,7 @@ button {
 
 @media screen and (min-width: 1280px) {
   .about__info-box {
-    max-width: 640px;
+    max-width: 641px;
   }
 }
 
@@ -853,7 +851,7 @@ button {
 @media screen and (min-width: 1280px) {
   .about__list {
     padding-top: 30px;
-    margin: 0 0 33px 0;
+    margin: 0 0 30px 0;
   }
 }
 
@@ -875,7 +873,7 @@ button {
 
 @media screen and (min-width: 1280px) {
   .about__item {
-    margin: 0 0 30px 0;
+    margin: 0 0 28px 0;
   }
 }
 
@@ -883,6 +881,7 @@ button {
   max-width: 17.08px;
   height: 14px;
   margin-right: 8.92px;
+  fill: var(--orange-color-text);
 }
 
 @media screen and (min-width: 1280px) {
@@ -947,7 +946,7 @@ button {
   font-size: 12px;
   line-height: 20px;
   color: var(--secondary-color-text);
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
 }
 
 @media screen and (min-width: 1280px) {

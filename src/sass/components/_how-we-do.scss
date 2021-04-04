@@ -1,7 +1,12 @@
 .how-we-do {
-  padding-top: 198px;
+  padding-top: 200px;
   padding-bottom: 50px;
   text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 280px;
+    padding-bottom: 130px;
+  }
 }
 
 .how-we-do__title {
@@ -10,17 +15,62 @@
   font-size: 20px;
   line-height: 1.30;
   letter-spacing: 0.03em;
-  color: currentColor
+  color: currentColor;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 50px;
+    font-size: 46px;
+    text-align: left;
+  }
+}
+
+.how-we-do__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+  }
 }
 
 .how-we-do__item {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-}
 
-.how-we-do__item:not(:last-child) {
-  margin-bottom: 15px;
+  @media screen and (min-width: 320px) and (max-width: 767px) { 
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    max-width: 280px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+    max-width: 334px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+    max-width: 425px;
+  }
+
+  & :hover,
+  & :focus {
+    background-color: var(--orange-color-text);
+    color: var(--main-background-color);
+  }
 }
 
 .how-we-do__set {
@@ -48,12 +98,30 @@
     height: 3px;
   
     background-color: var(--orange-color-text);
+    
+
+    @media screen and (min-width: 768px) and (max-width: 1279px){
+      margin-top: 25px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px){
+    margin-bottom: 53px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.40;
   }
 }
 
 .how-we-do__icon {
   margin-bottom: 20px;
   fill: currentColor;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .how-we-do__text {
@@ -63,4 +131,9 @@
   line-height: 1.67;
   letter-spacing: 0.08em;
   color: var(--secondary-color-text);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+  line-height: 1.56;
+  }
 }

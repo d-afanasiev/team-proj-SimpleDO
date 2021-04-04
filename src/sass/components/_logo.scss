@@ -54,19 +54,15 @@
   }
 
   &__hell-ru {
-    color: currentColor;
-
-    @media screen and (min-width: 768px) {
-      color: var(--orange-color-text);
-    }
+    color: var(--orange-color-text);
   }
 
   &__icon {
-    width: calc(22px * 0.64); 
+    width: calc(23px * 0.64); 
     height: calc(30px * 0.64); 
 
     @media screen and (min-width: 768px) {
-      width: 22px; 
+      width: 23px; 
       height: 30px; 
     }
   }

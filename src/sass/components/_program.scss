@@ -22,9 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
-
 }
 
 .container {
@@ -33,7 +31,6 @@
   padding-right: 20px;
   // min-width: 320px;
   min-width: auto;
-  outline: 1px solid yellow;
 
 
   // @media screen and (min-width: 480px) {
@@ -81,7 +78,7 @@
 
   &:last-child::after {
     content: "";
-    background-image: url("./src/images/program-img.jpg");
+    background-image: url("images/program-img.jpg");
     width: 176px;
     height: 110px;
     position: absolute;
@@ -105,7 +102,7 @@
   }
 
   &__title::before {
-    content: url("/src/images/program-ellipse.svg");
+    content: url("images/program-ellipse.svg");
     position: relative;
     margin-right: -12px;
     left: -32px;

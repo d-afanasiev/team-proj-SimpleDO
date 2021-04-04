@@ -1,0 +1,121 @@
+.reviews {
+  padding: 50px 0;
+  .reviews__slider{
+    .slider {
+      @media screen and (min-width: 768px) {
+        display: flex;
+      }
+    }
+  }
+}
+
+.slick-list {
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.slider__photo {
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    width: 150px;
+    margin-right: 46px;
+    margin-bottom: 0;
+  }
+}
+
+.slider-item {
+  margin-right: 10px;
+}
+
+.reviews__title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-top: 0;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+}
+
+.slider__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.slider-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.slider__title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--orange-color-text);
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+  }
+}
+
+.slider__description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--secondary-color-text);
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.slider-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  text-align: center;
+  color: var(--dark-color-text);
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.slider__content-button {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  text-align: center;
+  text-decoration-line: underline;
+  color: var(--orange-color-text);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: none;
+}
+
+.slider__more-text {
+  display: none;
+}
+
+.slider__content-button--unread {
+  display: none;
+}
+
+.slider__text--is-hidden {
+  display: none;
+}
+
+.slider__text--is-show {
+  display: block;
+}

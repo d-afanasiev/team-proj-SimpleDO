@@ -78,7 +78,7 @@
 
   &:last-child::after {
     content: "";
-    background-image: url("images/program-img.jpg");
+    background-image: url("../images/program-img.jpg");
     width: 176px;
     height: 110px;
     position: absolute;
@@ -102,7 +102,7 @@
   }
 
   &__title::before {
-    content: url("images/program-ellipse.svg");
+    content: url("../images/program-ellipse.svg");
     position: relative;
     margin-right: -12px;
     left: -32px;

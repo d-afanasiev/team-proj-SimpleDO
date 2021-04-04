@@ -1,13 +1,15 @@
+a{
+  text-decoration: none;
+}
 .header__container{
-    @media screen and (max-width: 1279px){
+   
 justify-content: space-between;
 display: flex;
-margin-top: 30.5px;
-margin-bottom: 50px;
+min-height: 110px;
 align-items: center;
 
 }
-}
+
 .menu-toggle__icon{
    fill: black;
 }
@@ -30,7 +32,7 @@ align-items: center;
     padding-top: 30px;
     background-color: rgba(17,21,24,0.9);
     z-index: 10;
-    transform: translateX(100%);
+    transform: translateX(300%);
     transition: transform 250ms ease-in-out;
   }
   
@@ -71,19 +73,17 @@ align-items: center;
     line-height: 1.8;
     letter-spacing: 0.03em;
     margin-top: 50px;
+    @media screen and (min-width: 768px) {
+      margin-left: 218px;
+  }
       
   }
- 
- 
- 
-.center{
   
-    text-align: center;
-   
-}
-.mobile-menu__button{
-    margin-top: 50px;
-    background-color: rgba(17,21,24,0.9);
+.center{
+      text-align: center;
+   }
+.menu__button{
+    background-color: rgba(17,21,24,0.01);
     border: solid 2px var(--orange-color-text);
     color: var(--orange-color-text);
     min-width: 260px;
@@ -91,8 +91,47 @@ align-items: center;
     margin-left: 10px;
     margin-right: 10px;
     font-size: 12px;
-   
-   
+    @media screen and (max-width: 1279px) {
+      margin-left: 239px;
+  }
 }
-  
+.header__container__menu__button{
+    @media screen and (max-width: 767px) {
+display: none;
+     }
+}
+.menu__button--mobile{
+  margin-top: 50px;
+  margin-left: 0px;
+  align-items: center;
+     @media screen and (min-width: 768px) {
+      display: none;
+  }
+}
+.header__container__menu_list{
+  display: flex;
+}
+.header__container__menu{
+    display: flex;
+  @media screen and (max-width: 1279px) {
+    display: none;
+}
+}
+.header__container__menu__link{
+  color: var(--secondary-color-text);
+  font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    text-transform: uppercase;
+    &:hover,
+  &:focus{
+    color: var(--orange-color-text);
+  }
+}
+.header__container__menu__item:not(:last-child){
+      margin-right: 40px;
+           }
+    
+
+
   

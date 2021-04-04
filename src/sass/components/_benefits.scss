@@ -15,7 +15,14 @@
 
 .benefits {
   position: absolute;
-  top: -10px;
+  width: 100%;
+  bottom: -50px;
+  @media screen and (min-width: 768px) {
+    top: -190px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: -150px;
+  }
 }
 
 .benefits__title {
@@ -24,8 +31,7 @@
   font-size: 20px;
   line-height: 1.36;
   letter-spacing: 0.03em;
-  //   color: var(--main-background-color);
-  color: black;
+  color: var(--main-background-color);
   margin: 0;
   padding-right: 120px;
   @media screen and (min-width: 768px) {
@@ -54,7 +60,6 @@
 }
 .benefits__list {
   position: absolute;
-  max-width: 480px;
   top: 80px;
   background-color: var(--main-background-color);
   margin: 0;

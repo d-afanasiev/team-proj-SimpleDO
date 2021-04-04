@@ -1,0 +1,147 @@
+.program {
+  margin: 0 auto;
+    // min-width: 320px;
+
+  background-color: var(--main-color);
+
+  z-index: 1;
+
+  outline: 1px solid white;
+
+  &__title {
+    margin: 0;
+    padding: 50px 0 43px 0;
+
+    text-align: center;
+
+    color: var(--main-background-color);
+  }
+
+  &__list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  // min-width: 320px;
+  min-width: auto;
+
+
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //   width: 768px;
+  // }
+
+  // @media screen and (min-width: 1280px) {
+  //   width: 1280px;
+  // }
+}
+
+.module {
+  width: 180px;
+  position: relative;
+
+  padding-left: 26px;
+  border-left: 1px solid var(--main-background-color);
+
+  &:first-child {
+    border-left: 1px solid black;
+    border-image: linear-gradient(to bottom,
+      #111518 7%,
+      #ffffff 7%,
+      #ffffff 100%
+      );
+    border-image-slice: 1;
+  }
+
+  &:last-child {
+    border-left: 1px solid white;
+    border-image: linear-gradient(
+      to bottom,
+      #ffffff 10%,
+      #111518 10%,
+      #111518 100%
+    );
+    border-image-slice: 1;
+
+
+  }
+
+  &:last-child::after {
+    content: "";
+    background-image: url("../images/program-img.jpg");
+    width: 176px;
+    height: 110px;
+    position: absolute;
+    background-size: cover;
+    opacity: 50%;
+
+    left: 110px;
+    top: 72px;
+  }
+
+  &__title {
+    margin: 0 auto 5px;
+
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.08em;
+
+    color: var(--main-background-color);
+  }
+
+  &__title::before {
+    content: url("../images/program-ellipse.svg");
+    position: relative;
+    margin-right: -12px;
+    left: -32px;
+  }
+
+  &__list {
+    margin: 0 auto 40px;
+  }
+
+  &__item {
+    margin: 0 auto;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+
+    color: var(--orange-color-text);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.lesson {
+  margin: 0 auto;
+
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  opacity: 50%;
+
+  color: var(--secondary-color-text);
+
+  &:last-child {
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    margin: 0 0 10px;
+  }
+}

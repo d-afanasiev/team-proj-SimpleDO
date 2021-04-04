@@ -2,31 +2,22 @@
     <h2 class="about__title">Преподаватель</h2>
     <div class="about__box">
       <div class="about__photo-box">
-        <img class="about__photo" 
-            srcset="./images/about-teacher-mobile.jpg 243w 1x, ./images/about-teacher-mobile@2x.jpg 243w 2x,
-                ./images/about-teacher-desktop.jpg 530w 1x, ./images/about-teacher-desktop@2x.jpg 530w 2x"
-            sizes="(min-width: 1280px) 530px, (max-width: 1279px) 243px"
-            src="./images/about-teacher-mobile.jpg" alt="elena-moreva-photo" loading="lazy">
-      </div>  
+        <picture class="about__photo">
+          <source srcset="./images/about-teacher-mobile.jpg 243w, ./images/about-teacher-mobile@2x.jpg 486w" media="(max-width: 1279px)" sizes="(min-width: 243px) 243px, 100vw">
+          <source srcset="./images/about-teacher-desktop.jpg 530w, ./images/about-teacher-desktop@2x.jpg 1060w" media="(min-width: 1280px)" sizes="(min-width: 530px) 530px, 100vw">
+          <img src="./images/about-teacher-desktop.jpg" alt="elena-moreva-photo" loading="lazy">
+        </picture>
+      </div>
       <div class="about__info-box">
         <h3 class="about__subtitle">Елена Морева</h3>
         <ul class="about__list">
             <li class="about__item">
-                <svg class="about__check">
-                    <use href="./images/sprite.svg#about-check"></use>
-                </svg>
                 <p class="about__paragraph">Опыт подготовки учеников к ВНО - 6 лет</p>
             </li>
             <li class="about__item">
-                <svg class="about__check">
-                    <use href="./images/sprite.svg#about-check"></use>
-                </svg>
                 <p class="about__paragraph">Собственный результат сдачи ВНО - 197 баллов 2 года подряд</p>
             </li>
             <li class="about__item">
-                <svg class="about__check">
-                    <use href="./images/sprite.svg#about-check"></use>
-                </svg>
                 <p class="about__paragraph">Сдала на отлично международный аналог ВНО - Кембриджский PET (Preliminary
                     English
                     Test)</p>
@@ -43,7 +34,7 @@
                 education),
                 Powerful Tools for Teaching and Learning (University of Houston).</p>
         </div>
-        <a class="about__link" href="#">Cambrige English Entry Level Certificate</a>
+        <a class="about__link" href="https://www.jbs.cam.ac.uk/executive-education/open-programmes/certificates-of-achievement/">Cambrige English Entry Level Certificate</a>
       </div>
     </div>    
 </section>

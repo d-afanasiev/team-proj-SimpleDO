@@ -32,6 +32,13 @@
   display: flex;
   flex-wrap: wrap;
 
+  & :hover,
+  & :focus {
+    background-color: var(--orange-color-text);
+    color: var(--main-background-color);
+    fill: var(--main-background-color);
+  }
+
   @media screen and (min-width: 768px) {
     margin-left: calc(-1 * 20px);
     margin-top: calc(-1 * 27px);
@@ -51,15 +58,7 @@
   margin-right: auto;
   padding: 30px 15px 15px;
 
-  background: var(--main-background-color);
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-
-  & :hover,
-  & :focus {
-    background-color: var(--orange-color-text);
-    color: var(--main-background-color);
-    fill: var(--main-background-color);
-  }
 
   @media screen and (max-width: 767px) { 
     &:not(:last-child) {

@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/main.js","index.js"],"names":["$","document","ready","slick"],"mappings":";;;AAAAA,EAAEC,UAAUC,MAAM,WAChBF,EAAE,oBAAoBG;;ACAxB,aADA,QAAA,oBACA,QAAA","file":"src.a99cf32e.js","sourceRoot":"../src","sourcesContent":["$(document).ready(function(){\n  $('.reviews__slider').slick();\n});","import './sass/main.scss';\nimport './js/main.js';"]}

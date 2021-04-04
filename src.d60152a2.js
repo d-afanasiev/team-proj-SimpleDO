@@ -5,4 +5,4 @@ $(document).ready(function(){$(".reviews__slider").slick({dots:!0,adaptiveHeight
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/main.js");
 },{"./sass/main.scss":"clu1","./js/main.js":"d6sW"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-proj-SimpleDO/src.d64156f5.js.map
+//# sourceMappingURL=/team-proj-SimpleDO/src.d60152a2.js.map

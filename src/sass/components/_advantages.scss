@@ -2,12 +2,12 @@
   outline: 1px dashed aqua;
   padding-top: 30px;
   padding-bottom: 50px;
-  
+
   @media screen and (min-width: 768px) {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  
+
   @media screen and (min-width: 1280px) {
     padding-top: 95px;
     padding-bottom: 130px;
@@ -64,11 +64,11 @@
   @media screen and (min-width: 1280px) {
     width: 413px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) and (max-width: 1279px) {
     width: 215px;
     margin-right: 21px;
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     margin-bottom: 30px;
     &:last-child {
       margin-bottom: 0;

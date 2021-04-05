@@ -4,9 +4,16 @@
 
   background-color: var(--main-color);
 
+  // position: relative;
+  // height: 1130px;
   z-index: 1;
 
   outline: 1px solid white;
+  overflow-x: hidden;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
 
   &__title {
     margin: 0;
@@ -15,6 +22,17 @@
     text-align: center;
 
     color: var(--main-background-color);
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1268px) {
+      padding: 120px 0 100px 0;
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 60px;
+    }
   }
 
   &__list {
@@ -22,6 +40,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 100px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-left: 0;
+      flex-direction: unset;
+      align-items:unset ;
+    }
   }
 }
 
@@ -32,18 +60,21 @@
   // min-width: 320px;
   min-width: auto;
 
-
   // @media screen and (min-width: 480px) {
   //   width: 480px;
   // }
 
-  // @media screen and (min-width: 768px) {
-  //   width: 768px;
-  // }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
-  // @media screen and (min-width: 1280px) {
-  //   width: 1280px;
-  // }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 180px;
+    padding-right: 40px;
+  }
 }
 
 .module {
@@ -53,6 +84,18 @@
   padding-left: 26px;
   border-left: 1px solid var(--main-background-color);
 
+  @media screen and (min-width: 768px) {
+    width: 688px;
+    padding-left: 56px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 0;
+    border-left: none;
+    padding-right: 30px;
+    border-top: 1px solid var(--main-background-color);
+  }
+
   &:first-child {
     border-left: 1px solid black;
     border-image: linear-gradient(to bottom,
@@ -61,6 +104,12 @@
       #ffffff 100%
       );
     border-image-slice: 1;
+
+    @media screen and (min-width: 1280px) {
+      border-left: none;
+      border-image: none;
+      border-top: 1px solid var(--main-background-color);
+    }
   }
 
   &:last-child {
@@ -73,7 +122,10 @@
     );
     border-image-slice: 1;
 
-
+    @media screen and (min-width: 1280px) {
+      border-left: none;
+      border-top: 1px solid var(--main-background-color);
+    }
   }
 
   &:last-child::after {
@@ -85,8 +137,28 @@
     background-size: cover;
     opacity: 50%;
 
+    z-index: 1;
+
     left: 110px;
     top: 72px;
+
+    @media screen and (min-width: 768px) {
+      width: 384px;
+      height: 280px;
+
+      top: -55px;
+      left: 267px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      // display: none;
+      background-image: url("../images/program-img2.jpg");
+      width: 760px;
+      height: 370px;
+      top: 408px;
+      left: -1290px;
+      overflow: hidden;
+    }
   }
 
   &__title {
@@ -99,6 +171,12 @@
     letter-spacing: 0.08em;
 
     color: var(--main-background-color);
+
+    @media screen and (min-width: 1280px) {
+      font-size: 20px;
+      padding-top: 60px;
+      padding-bottom: 25px;
+    }
   }
 
   &__title::before {
@@ -106,10 +184,35 @@
     position: relative;
     margin-right: -12px;
     left: -32px;
+
+    @media screen and (min-width: 768px) {
+      left: -62px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: -2px;
+      top: -78px;
+    }
+  }
+
+  &__title--number {
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+    }
   }
 
   &__list {
     margin: 0 auto 40px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-bottom: 30px;
+      // justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: block;;
+    }
   }
 
   &__item {
@@ -121,6 +224,16 @@
     letter-spacing: 0.08em;
 
     color: var(--orange-color-text);
+
+    @media screen and (min-width: 768px) {
+      margin: 0;
+      width: 210px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 25px;
+      width: 210px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -137,11 +250,30 @@
 
   color: var(--secondary-color-text);
 
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
   &:last-child {
     margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 
   &__title {
     margin: 0 0 10px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 5px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 10px;
+      font-size: 20px;
+      line-height: 33px;
+    }
   }
 }

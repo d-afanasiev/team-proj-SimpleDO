@@ -25,6 +25,10 @@
   margin: 0 auto;
   // padding: 0 32px;
   flex-direction: column;
+
+  // flex-wrap: wrap;
+  // margin-top: calc(-1 * var(--advantages-card-set-gap));
+  // margin-left: calc(-1 * var(--advantages-card-set-gap));
   
   @media screen and (min-width: 480px) {
     // width: 480px;

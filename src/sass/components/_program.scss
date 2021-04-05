@@ -9,7 +9,10 @@
   z-index: 1;
 
   outline: 1px solid white;
-  overflow-x: hidden;
+
+  @media screen and (max-width: 480px) {
+    overflow-x: hidden;
+  }
 
   @media screen and (min-width: 768px) {
     padding-bottom: 100px;
@@ -50,6 +53,19 @@
       flex-direction: unset;
       align-items:unset ;
     }
+  }
+}
+
+.border-crutch {
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: inherit;
+    position: relative;
+    top: 281px;
+
+    border-bottom: 1px solid var(--main-background-color);
+    // height: 281px;
   }
 }
 
@@ -127,13 +143,11 @@
     }
 
     @media screen and (min-width: 1280px) {
-      // display: none;
-      background-image: url("../images/program-img2.jpg");
+      background-image: url("../images/program-img.jpg");
       width: 760px;
       height: 370px;
       top: 408px;
       left: -1290px;
-      overflow: hidden;
     }
   }
 
@@ -152,13 +166,18 @@
       font-size: 20px;
       padding-top: 60px;
       padding-bottom: 25px;
+      margin-bottom: 0;
     }
   }
 
   &__title::before {
-    content: url("../images/program-ellipse.svg");
+    display: inline-block;
     position: relative;
-    margin-right: -12px;
+    content: "";
+    background-color: var(--orange-color-text);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
     left: -32px;
 
     @media screen and (min-width: 768px) {
@@ -166,8 +185,11 @@
     }
 
     @media screen and (min-width: 1280px) {
-      left: -2px;
-      top: -78px;
+      margin-right: -17px;
+      top: -76px;
+      left: 0;
+      width: 17px;
+      height: 17px;
     }
   }
 
@@ -222,9 +244,9 @@
 
   font-weight: 500;
   letter-spacing: 0.08em;
-  opacity: 50%;
+  // opacity: 50%;
 
-  color: var(--secondary-color-text);
+  color: rgba(185, 185, 185, 0.5);
 
   @media screen and (min-width: 1280px) {
     font-size: 18px;

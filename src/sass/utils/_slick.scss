@@ -70,6 +70,9 @@
     @media screen and (min-width: 768px) {
       padding: 40px;
     }
+    @media screen and (min-width: 1280px) {
+      padding: 50px 112px 51px 82px;
+    }
     [dir="rtl"] & {
         float: right;
     }

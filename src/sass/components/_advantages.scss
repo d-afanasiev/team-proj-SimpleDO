@@ -1,0 +1,143 @@
+.advantages {
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: 480px) {
+  }
+  
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+  }
+  
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.advantages .container {
+  display: flex;
+
+}
+
+.advantages-list {
+  display: flex;
+  // width: 216px;
+  // width: 100%;
+  margin: 0 auto;
+  // padding: 0 32px;
+  flex-direction: column;
+
+  // flex-wrap: wrap;
+  // margin-top: calc(-1 * var(--advantages-card-set-gap));
+  // margin-left: calc(-1 * var(--advantages-card-set-gap));
+  
+  @media screen and (min-width: 480px) {
+    // width: 480px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    // width: 768px;
+    flex-direction: row;
+    margin: 0;
+    // align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  @media screen and (min-width: 1280px) {
+    // font-size: 20px;
+    // line-height: 1.649;
+    // letter-spacing: 0.08em;
+  }
+}
+
+.advantages-list__item {
+  display: flex;
+  width: 216px;
+  align-items: center;
+  // justify-content: space-between;
+  @media screen and (min-width: 480px) {
+    
+  }
+  
+  @media screen and (min-width: 768px) {
+    
+  }
+  
+  @media screen and (min-width: 1280px) {
+    width: 448px;
+    height: 102px;
+    position: relative;
+  }
+}
+
+.advantages-list__item:not(:last-of-type) {
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    // width: 480px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    // width: 768px;
+    margin-bottom: 0;
+  }
+  
+  @media screen and (min-width: 1280px) {
+    // font-size: 20px;
+    // line-height: 1.649;
+    // letter-spacing: 0.08em;
+  }
+}
+
+.advantages__icon {
+
+  &--desktop {
+    display: none;
+
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+    &--desktop {
+      display: flex;
+  
+    }
+
+  }
+}
+
+.advantages-list__text {
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  max-width: 146px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  // display: inline-flex;
+  // align-items: center;
+  letter-spacing: 0.08em;
+  
+  color: var(--main-color);
+  
+  @media screen and (min-width: 480px) {
+    // width: 480px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    // width: 768px;
+  }
+  
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.649;
+    letter-spacing: 0.08em;
+    max-width: 366px;
+    // width: 366px;
+    height: 66px;
+    position: absolute;
+    top: 50%;
+    left: 82px;
+    transform: translateY(-50%);
+    margin: 0;
+  }
+}

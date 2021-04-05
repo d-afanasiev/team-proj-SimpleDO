@@ -42,7 +42,7 @@
 }
 
 .hero__title {
-  padding-top: 50px;
+  padding-top: 10px;
   margin-top: 0px;
   margin-bottom: 30px;
   font-weight: 800;
@@ -53,13 +53,13 @@
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.30;
-    padding-top: 70px;
+    padding-top: 40px;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 56px;
     line-height: 1.29;
-    padding-top: 125px;
+    padding-top: 50px;
     margin-bottom: 24px;
   }
 }
@@ -131,7 +131,7 @@
 
 .hero__picture {
   @media screen and (min-width: 768px) {
-    padding-top: 30px;
+    padding-top: 10px;
   }
 
 }

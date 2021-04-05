@@ -84,7 +84,7 @@ $slick-opacity-not-active: 0.25 !default;
       top: 50%;
     }
     @media screen and (min-width: 769px) {
-      top: 50%;
+      top: 40%;
     }
     &:hover, &:focus {
         outline: none;
@@ -111,6 +111,9 @@ $slick-opacity-not-active: 0.25 !default;
     @media screen and (min-width: 768px) {
       left: -15px;
     }
+    @media screen and (min-width: 1280px) {
+      left: 15px;
+    }
     // @media screen and (min-width: 1680px) {
     //   left: -87px;
     // }
@@ -128,6 +131,9 @@ $slick-opacity-not-active: 0.25 !default;
     z-index: 1;
     @media screen and (min-width: 768px) {
       right: -15px;
+    }
+    @media screen and (min-width: 1280px) {
+      right: 15px;
     }
     // @media screen and (min-width: 1680px) {
     //   right: -87px;

@@ -29,8 +29,7 @@ p {
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
-      (min-resolution: 2dppx),
-      (min-width: 768px) {
+      (min-resolution: 2dppx) {
       background-image: url(../images/contacts_tab@2x.jpg);
       background-size: cover;
     }
@@ -46,8 +45,7 @@ p {
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
-      (min-resolution: 2dppx),
-      (min-width: 1280px) {
+      (min-resolution: 2dppx) {
       background-image: url(../images/contacts_desk@2x.jpg);
     }
   }
@@ -64,7 +62,6 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-background-color);
-
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
@@ -123,24 +120,17 @@ p {
   padding-top: 15px;
   padding-bottom: 16px;
   padding-left: 28px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
   outline: none;
   color: var(--main-background-color);
-
   background: transparent;
   border: 1px solid var(--main-background-color);
 
-  @media screen and (max-width: 767px) {
-    width: 100%;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-  }
-
   @media screen and (min-width: 768px) {
     width: 390px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
   }
 
   @media screen and (min-width: 1280px) {
@@ -148,6 +138,8 @@ p {
     padding-top: 23px;
     padding-bottom: 23px;
     padding-left: 40px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
@@ -180,23 +172,18 @@ p {
   cursor: pointer;
   border: none;
   width: 260px;
-  height: 48px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-align: center;
-
   background-color: var(--orange-color-text);
-
   color: var(--main-background-color);
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.08em;
-
-  @media screen and (max-width: 767px) {
-    margin-top: 50px;
-  }
+  text-transform: uppercase;
+  margin-top: 50px;
 
   @media screen and (min-width: 768px) {
     margin-top: 30px;
@@ -210,7 +197,6 @@ p {
     font-size: 14px;
     line-height: 1.214;
     letter-spacing: 0.14em;
-    text-transform: uppercase;
   }
 }
 

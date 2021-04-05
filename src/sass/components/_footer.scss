@@ -1,0 +1,146 @@
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__social-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.footer__container {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+}
+
+.footer__logo {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo__hell-ru {
+    color: var(--main-color);
+  }
+}
+.footer__list {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+}
+
+.footer__phone-link {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.214;
+  letter-spacing: 0.08em;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.233;
+  }
+}
+
+.vertical__line {
+  @media screen and (min-width: 768px) {
+    border-right: 1px solid var(--secondary-color-text);
+    height: 40px;
+    margin-right: 24px;
+    margin-left: 16px;
+  }
+}
+
+.footer__insta {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/footer-instagram.svg);
+}
+
+.footer__phone-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 19.21px;
+
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 23.06px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 15px;
+    width: 30px;
+    height: 28.82px;
+  }
+}
+
+.copyright {
+  padding: 21px 0;
+  height: 70px;
+
+  background-color: var(--main-color);
+}
+
+.copyright-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+
+  text-align: center;
+  color: #b9b9b9;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}

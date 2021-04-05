@@ -108,12 +108,12 @@
   background-color: var(--orange-color-text);
   color: var(--main-background-color);
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  padding: 14px 5px;
+  padding: 18px 5px;
 
   @media screen and (min-width: 768px) {
     display: inline-block;
@@ -121,7 +121,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    font-weight: 700;
+    
     font-size: 14px;
     line-height: 1.21;
     width: 354px;

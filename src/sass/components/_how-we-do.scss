@@ -52,14 +52,11 @@
   padding: 30px 15px 15px;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
 
-  transform: scale(1);
-  transition: scale var(--animation-dur) var(--animation-type);
   transition: background-color var(--animation-dur) var(--animation-type);
 
   &--orange:hover,
   &--orange:focus {
     background-color: var(--orange-color-text);
-    transform: scale(1.05);
   }
 
   &--orange:hover .how-we-do__caption::after,

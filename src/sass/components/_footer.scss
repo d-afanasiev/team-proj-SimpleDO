@@ -22,20 +22,34 @@ a {
   overflow: hidden;
 }
 
-.footer {
-  margin: 0 auto;
-  max-width: 480px;
-}
+// .footer {
+//   margin: 0 auto;
+
+//   @media screen and (min-width: 768px) {
+//     // max-width: 768px;
+//   }
+// }
 
 .footer__container {
   display: flex;
-  flex-direction: column;
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .footer__logo {
-  margin-bottom: 20px;
-  align-items: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+    // text-align: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -43,17 +57,22 @@ a {
     color: var(--main-color);
   }
 }
-
-.footer__item {
+.footer__list {
   display: flex;
-  flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
 }
 
-.footer__link {
+.footer__phone-link {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
   white-space: nowrap;
 
   font-style: normal;
@@ -61,15 +80,49 @@ a {
   font-size: 14px;
   line-height: 1.214;
   letter-spacing: 0.08em;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.vertical__line {
+  @media screen and (min-width: 768px) {
+    border-right: 1px solid var(--secondary-color-text);
+    height: 40px;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+}
+
+.insta {
+  width: 40px;
+  height: 40px;
+  // align-items: center;
+  background-image: url(../images/footer-instagram.svg);
+
+  @media screen and (min-width: 768px) {
+    // margin-left: 48px;
+  }
 }
 
 .footer__phone-icon {
   margin-right: 10px;
 }
 
-.footer__copyright {
+// .footer__copyright > .container {
+//   margin: 0;
+// }
+
+.copyright {
   padding: 21px 0;
   height: 70px;
+
   background-color: var(--main-color);
 }
 
@@ -81,4 +134,8 @@ a {
 
   text-align: center;
   color: #b9b9b9;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }

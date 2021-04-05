@@ -9,6 +9,15 @@
   }
 }
 
+.reviews {
+  .container {
+    @media screen and (min-width: 768px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+
 .slick-list {
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }

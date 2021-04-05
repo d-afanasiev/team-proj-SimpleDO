@@ -1,4 +1,6 @@
-$(document).ready(function(){
+"use strict";
+
+$(document).ready(function () {
   $('.reviews__slider').slick({
     dots: true,
     adaptiveHeight: true,
@@ -10,21 +12,17 @@ $(document).ready(function(){
   });
 });
 
-(() => {
-  const buttonSlider = {
-    button: document.querySelectorAll('.slider__content-button'),
-    readMore: document.querySelector('.slider__content-button--read'),
-    hideText: document.querySelector('.slider__content-button--unread'),
-    text: document.querySelector('.slider__more-text'),
-    dots: document.querySelector('.slider-content_dots')
-  };
-
-  buttonSlider.button.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    buttonSlider.readMore.classList.toggle('slider__text--is-hidden');
-    buttonSlider.dots.classList.toggle('slider__text--is-hidden');
-    buttonSlider.text.classList.toggle('slider__text--is-show');
-    buttonSlider.hideText.classList.toggle('slider__text--is-show');
-  }
-})();
+let button = document.getElementsByClassName('slider__content-button');
+let dots = document.getElementsByClassName('slider-content_dots');
+let readMoreText = document.getElementsByClassName('slider__more-text');
+let offBtn = document.getElementsByClassName('slider__content-button--active');
+$(function () {
+  $(button).click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('slider__content-button--active');
+    $(dots).toggleClass('slider__text--is-hidden');
+    $(readMoreText).toggleClass('slider__text--is-show');
+    $('.slider__content-button--read').toggleClass('slider__text--is-hidden');
+    $('.slider__content-button--unread').toggleClass('slider__text--is-show');
+  });
+});

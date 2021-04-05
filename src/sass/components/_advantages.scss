@@ -1,5 +1,17 @@
 .advantages {
   outline: 1px dashed aqua;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  @media screen and (min-width: 1280px) {
+    padding-top: 95px;
+    padding-bottom: 130px;
+  }
 }
 
 .advantages .container {
@@ -14,8 +26,7 @@
   align-items: center;
   outline: 1px dashed blueviolet;
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 50px;
+
   flex-direction: column;
 
   // // width: 216px;

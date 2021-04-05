@@ -10,6 +10,16 @@
 
   --animation-dur: 250ms;
   --animation-type: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --advantages-card-set-gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    --advantages-card-set-gap: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    --advantages-card-set-gap: 0;
+  }
 }
 
 body {

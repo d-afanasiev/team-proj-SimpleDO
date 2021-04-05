@@ -1,7 +1,12 @@
 .how-we-do {
-  padding-top: 198px;
+  padding-top: 200px;
   padding-bottom: 50px;
   text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 280px;
+    padding-bottom: 130px;
+  }
 }
 
 .how-we-do__title {
@@ -10,50 +15,139 @@
   font-size: 20px;
   line-height: 1.30;
   letter-spacing: 0.03em;
-  color: currentColor
-}
+  color: var(--main-color);
 
-.how-we-do__item {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
 
-.how-we-do__item:not(:last-child) {
-  margin-bottom: 15px;
-}
-
-.how-we-do__set {
-  padding: 30px 5px 25px;
-  background: var(--main-background-color);
-  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-}
-
-.how-we-do__caption {
-  position: relative;
-  margin: 0 auto 33px;
-  font-size: 14px;
-  line-height: 1.43;
-  letter-spacing: 0.08em;
-
-  &::after {
-    position: absolute;
-    content: '';
-  
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 15px;
-    display: block;
-    width: 25px;
-    height: 3px;
-  
-    background-color: var(--orange-color-text);
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 50px;
+    font-size: 46px;
+    text-align: left;
   }
 }
 
+.how-we-do__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    margin-left: calc(-1 * 20px);
+    margin-top: calc(-1 * 27px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: calc(-1 * 20px);
+    margin-top: calc(-1 * 20px);
+  }
+}
+
+.how-we-do__item {
+  display: inline-block;
+  max-width: 280px;
+  min-height: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 15px 15px;
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+
+  transform: scale(1);
+  transition: scale var(--animation-dur) var(--animation-type);
+  transition: background-color var(--animation-dur) var(--animation-type);
+
+  &--orange:hover,
+  &--orange:focus {
+    background-color: var(--orange-color-text);
+    transform: scale(1.05);
+  }
+
+  &--orange:hover .how-we-do__caption::after,
+  &--orange:focus .how-we-do__caption::after {
+    background-color: var(--main-background-color);
+  }
+
+  @media screen and (max-width: 767px) { 
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-top: 27px;
+    flex-basis: calc(100% / 2 - 20px);
+    padding: 30px 20px 15px;
+    max-width: 100%;
+    min-height: 334px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    flex-basis: calc(100% / 3 - 20px);
+    padding: 30px 20px 15px;
+    max-width: 100%;
+    min-height: 396px;
+  }
+}
+
+.how-we-do__caption {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.08em;
+  color: var(--main-color);
+
+  .how-we-do__item--orange:hover &,
+  .how-we-do__item--orange:focus & {
+    color: var(--main-background-color);
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 15px auto 0;
+  
+    background-color: var(--orange-color-text);
+
+    @media screen and (min-width: 768px) and (max-width: 1279px){
+      margin-top: 25px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px){
+    margin-bottom: 25px;
+    max-width: 80%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.40;
+  }
+}
+
+
+
 .how-we-do__icon {
   margin-bottom: 20px;
-  fill: currentColor;
+  fill: #ff6b09;
+
+  .how-we-do__item--orange:hover &,
+  .how-we-do__item--orange:focus & {
+    fill: var(--main-background-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
 }
 
 .how-we-do__text {
@@ -63,4 +157,14 @@
   line-height: 1.67;
   letter-spacing: 0.08em;
   color: var(--secondary-color-text);
+
+  .how-we-do__item--orange:hover &,
+  .how-we-do__item--orange:focus & {
+    color: var(--main-background-color);
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }

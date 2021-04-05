@@ -5,7 +5,7 @@ a{
    
 justify-content: space-between;
 display: flex;
-min-height: 110px;
+min-height: 90px;
 align-items: center;
 
 }
@@ -42,12 +42,12 @@ align-items: center;
   
   .menu-container .menu-toggle {
     position: absolute;
-    top: 37px;
-    right: 20px;
+    top: 35px;
+    right: 25px;
     background-color: rgba(17,21,24,0.001);
     padding: 0px;
     border: none;
-    fill:blanchedalmond;
+    fill: var(--main-background-color);
     
   }
   
@@ -101,8 +101,8 @@ display: none;
      }
 }
 .menu__button--mobile{
-  margin-top: 50px;
-  margin-left: 0px;
+  display: block;
+  margin: 50px auto 0;
   align-items: center;
      @media screen and (min-width: 768px) {
       display: none;

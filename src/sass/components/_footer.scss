@@ -92,19 +92,24 @@ footer a {
   }
 }
 
-.vertical__line {
-  @media screen and (min-width: 768px) {
-    border-right: 1px solid var(--secondary-color-text);
-    height: 40px;
-    margin-right: 24px;
-    margin-left: 16px;
-  }
-}
-
 .footer__insta {
   width: 40px;
   height: 40px;
   background-image: url(../images/footer-instagram.svg);
+
+  @media screen and (min-width: 768px) {
+    margin-left: 40px;
+  }
+}
+
+.footer__insta::before {
+  @media screen and (min-width: 768px) {
+    content: '';
+    display: inline-block;
+    border-right: 1px solid var(--secondary-color-text);
+    height: 40px;
+    margin-left: -24px;
+  }
 }
 
 .footer__phone-icon {

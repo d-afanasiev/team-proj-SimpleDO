@@ -54,12 +54,12 @@
 
   transform: scale(1);
   transition: scale var(--animation-dur) var(--animation-type);
+  transition: background-color var(--animation-dur) var(--animation-type);
 
   &--orange:hover,
   &--orange:focus {
     background-color: var(--orange-color-text);
     transform: scale(1.05);
-    transition: scale var(--animation-dur) var(--animation-type);
   }
 
   &--orange:hover .how-we-do__caption::after,

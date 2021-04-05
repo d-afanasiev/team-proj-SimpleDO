@@ -1,10 +1,10 @@
-.guarantee {
-  padding: 50px 0 0 0;
+// .guarantee {
+//   padding: 50px 0 0 0;
 
-  @media screen and (min-width: 1280px) {
-    padding: 130px 0 0 0;
-  }
-}
+//   @media screen and (min-width: 1280px) {
+//     padding: 130px 0 0 0;
+//   }
+// }
 
 .guarantee__container {
   padding: 20px 30px;
@@ -26,6 +26,7 @@
 .guarantee__title {
   margin-top: 0;
   margin-bottom: 30px;
+  padding-top: 50px;
   text-align: center;
 
   font-style: normal;
@@ -36,6 +37,7 @@
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 50px;
+    padding-top: 130px;
 
     font-size: 46px;
     line-height: 1.304;

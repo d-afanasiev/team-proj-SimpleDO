@@ -13,7 +13,7 @@
   }
 }
 .benefits {
-  transform: translateY(-10px);
+  transform: translateY(-2px);
   width: 100%;
   background-image: linear-gradient(to bottom, #111518 70%, #ffffff 30%);
 }
@@ -39,7 +39,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .flex-basis {
+  .benefits__list {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
@@ -48,12 +48,12 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .flex-basis {
+  .benefits__list {
     margin-top: -32px;
     margin-left: -20px;
   }
 }
-.benefits__list {
+.benefits__flex-basis {
   background-color: var(--main-background-color);
   margin: 0;
   counter-reset: section-counter;

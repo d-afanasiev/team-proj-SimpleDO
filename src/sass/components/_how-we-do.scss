@@ -32,13 +32,6 @@
   display: flex;
   flex-wrap: wrap;
 
-  & :hover,
-  & :focus {
-    background-color: var(--orange-color-text);
-    color: var(--main-background-color);
-    fill: var(--main-background-color);
-  }
-
   @media screen and (min-width: 768px) {
     margin-left: calc(-1 * 20px);
     margin-top: calc(-1 * 27px);
@@ -57,8 +50,22 @@
   margin-left: auto;
   margin-right: auto;
   padding: 30px 15px 15px;
-
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+
+  transform: scale(1);
+  transition: scale var(--animation-dur) var(--animation-type);
+
+  &--orange:hover,
+  &--orange:focus {
+    background-color: var(--orange-color-text);
+    transform: scale(1.05);
+    transition: scale var(--animation-dur) var(--animation-type);
+  }
+
+  &--orange:hover .how-we-do__caption::after,
+  &--orange:focus .how-we-do__caption::after {
+    background-color: var(--main-background-color);
+  }
 
   @media screen and (max-width: 767px) { 
     &:not(:last-child) {
@@ -96,6 +103,11 @@
   letter-spacing: 0.08em;
   color: var(--main-color);
 
+  .how-we-do__item--orange:hover &,
+  .how-we-do__item--orange:focus & {
+    color: var(--main-background-color);
+  }
+
   &::after {
     content: '';
     display: block;
@@ -104,7 +116,6 @@
     margin: 15px auto 0;
   
     background-color: var(--orange-color-text);
-    
 
     @media screen and (min-width: 768px) and (max-width: 1279px){
       margin-top: 25px;
@@ -126,11 +137,17 @@
 
 .how-we-do__icon {
   margin-bottom: 20px;
-  fill: var(--orange-color-text);
+  fill: #ff6b09;
+
+  .how-we-do__item--orange:hover &,
+  .how-we-do__item--orange:focus & {
+    fill: var(--main-background-color);
+  }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
   }
+
 }
 
 .how-we-do__text {
@@ -140,6 +157,11 @@
   line-height: 1.67;
   letter-spacing: 0.08em;
   color: var(--secondary-color-text);
+
+  .how-we-do__item--orange:hover &,
+  .how-we-do__item--orange:focus & {
+    color: var(--main-background-color);
+  }
 
   @media screen and (min-width: 1280px) {
     font-size: 18px;

@@ -23,17 +23,29 @@
   padding: 0;
   padding-left: 32px;
   padding-right: 32px;
-
+  
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    margin-left: calc(-1 * var(--advantages-card-set-gap));
+    margin-top: calc(-1 * var(--advantages-card-set-gap));
   }
-
+  
+  @media screen and (min-width: 1280px) {
+    margin-left: calc(-1 * var(--advantages-card-set-gap));
+    margin-top: calc(-1 * var(--advantages-card-set-gap));
+  }
 }
 
+// margin-left: calc(-1 * var(--advantages-card-set-gap));
+// margin-top: calc(-1 * var(--advantages-card-set-gap));
+
+// flex-basis: calc(100% / 3 - var(--advantages-card-set-gap));
+// margin-left: var(--advantages-card-set-gap);
+// margin-top: var(--advantages-card-set-gap);
+
 .advantages-list__item {
-  flex-basis: calc(100% - var(--advantages-card-set-gap));
   min-height: 62px;
   display: flex;
   align-items: center;
@@ -50,18 +62,16 @@
 
   @media screen and (min-width: 768px) {
     justify-content: flex-start;
-    flex-basis: calc((100% - (var(--advantages-card-set-gap) * 2)) / 3);
-    margin-right: 21px;
-
-    &:last-child {
-      margin-right: 0;
-    }
+    flex-basis: calc(100% / 3 - var(--advantages-card-set-gap));
+    margin-left: var(--advantages-card-set-gap);
+    margin-top: var(--advantages-card-set-gap);
   }
 
   @media screen and (min-width: 1280px) {
     min-height: 104px;
-    flex-basis: calc(100% / 3);
-    margin-right: 0;
+    flex-basis: calc(100% / 3 - var(--advantages-card-set-gap));
+    margin-left: var(--advantages-card-set-gap);
+    margin-top: var(--advantages-card-set-gap);
   }
 }
 
@@ -122,3 +132,11 @@
     background-image: url("../images/advantages-finance-large.svg");
   }
 }
+
+// .advantages-list__item:nth-child(4) .advantages-list__text::before{
+//   @extend %advantages-list__text--before;
+//   background-image: url("../images/advantages-finance-small.svg");
+//   @media screen and (min-width: 1280px) {
+//     background-image: url("../images/advantages-finance-large.svg");
+//   }
+// }

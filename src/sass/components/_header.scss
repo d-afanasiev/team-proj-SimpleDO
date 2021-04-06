@@ -26,10 +26,11 @@ align-items: center;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-bottom: 42px;
     padding-top: 30px;
+    @media (min-width: 768px) {
+      padding-top: 25px;
+  }
     background-color: rgba(17,21,24,0.9);
     z-index: 10;
     transform: translateX(300%);
@@ -42,8 +43,11 @@ align-items: center;
   
   .menu-container .menu-toggle {
     position: absolute;
-    top: 35px;
-    right: 25px;
+    top: 5px;
+    @media (min-width: 768px) {
+      top: 8px;
+  }
+    right: 26px;
     background-color: rgba(17,21,24,0.001);
     padding: 0px;
     border: none;
@@ -132,6 +136,19 @@ display: none;
       margin-right: 40px;
            }
     
+.wrapper{
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  min-width: auto;
+  max-width: 767px;
+  @media (min-width: 480px) {
+    max-width: 480px;
+  }
 
+  @media (min-width: 768px) {
+    max-width: 768px;
+}
 
-  
+}

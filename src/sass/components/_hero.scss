@@ -103,6 +103,7 @@
   display:block;
   position: relative;
   margin: 0 auto;
+  text-align: center;
   width: 260px;
   border: none;
   background-color: var(--orange-color-text);
@@ -113,8 +114,10 @@
   line-height: 1.25;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  padding: 18px 5px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   cursor: pointer;
+  letter-spacing: 0.08em;
 
   @media screen and (min-width: 768px) {
     display: inline-block;
@@ -122,17 +125,20 @@
   }
 
   @media screen and (min-width: 1280px) {
-
+    padding-top: 25px;
+    padding-bottom: 25px;
     font-size: 14px;
     line-height: 1.21;
     width: 354px;
-    padding: 26px 25px ;
+    
+    
   }
 }
 
 .hero__picture {
   @media screen and (min-width: 768px) {
     padding-top: 10px;
+    
   }
 
 }

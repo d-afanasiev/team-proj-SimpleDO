@@ -82,9 +82,6 @@ $slick-opacity-not-active: 0.25 !default;
     @media screen and (min-width: 768px) {
       top: 50%;
     }
-    @media screen and (min-width: 769px) {
-      top: 40%;
-    }
     &:hover, &:focus {
         outline: none;
         background: transparent;

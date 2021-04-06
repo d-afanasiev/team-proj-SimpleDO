@@ -12,8 +12,12 @@ align-items: center;
 
 .menu-toggle__icon{
    fill: black;
+   width: 21px;
+   height: 13px;
 }
 .menu-toggle{
+  margin: 0;
+  padding: 0;
   border: none;
   cursor: pointer;
   background-color:  var(--main-background-color);

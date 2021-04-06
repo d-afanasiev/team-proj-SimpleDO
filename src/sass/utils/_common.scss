@@ -14,7 +14,7 @@
   --advantages-card-set-gap: 30px;
 
   @media screen and (min-width: 768px) {
-    --advantages-card-set-gap: 20px;
+    --advantages-card-set-gap: 21px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -62,9 +62,13 @@ button {
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

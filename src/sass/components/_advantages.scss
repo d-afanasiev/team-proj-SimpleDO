@@ -99,6 +99,8 @@
     min-width: auto;
   }
    @media screen and (min-width: 1280px) {
+    margin-left: -18px;
+    min-width: min-content;
     font-size: 20px;
     line-height: 1.649;
     letter-spacing: 0.08em;

@@ -99,7 +99,6 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  content: ""; 
   width: 61px;
   height: 62px;
   
@@ -111,25 +110,25 @@
 
 .advantages-list__item:nth-child(1) .advantages-list__text::before{
   @extend %advantages-list__text--before;
-  background-image: url("../images/advantages-student-small.svg");
+  content: url("../images/advantages-student-small.svg"); 
   @media screen and (min-width: 1280px) {
-    background-image: url("../images/advantages-student-large.svg");
+    content: url("../images/advantages-student-large.svg");
   }
 }
 
 .advantages-list__item:nth-child(2) .advantages-list__text::before{
   @extend %advantages-list__text--before;
-  background-image: url("../images/advantages-training-small.svg");
+  content: url("../images/advantages-training-small.svg");
   @media screen and (min-width: 1280px) {
-    background-image: url("../images/advantages-training-large.svg");
+    content: url("../images/advantages-training-large.svg");
   }
 }
 
 .advantages-list__item:nth-child(3) .advantages-list__text::before{
   @extend %advantages-list__text--before;
-  background-image: url("../images/advantages-finance-small.svg");
+  content: url("../images/advantages-finance-small.svg");
   @media screen and (min-width: 1280px) {
-    background-image: url("../images/advantages-finance-large.svg");
+    content: url("../images/advantages-finance-large.svg");
   }
 }
 

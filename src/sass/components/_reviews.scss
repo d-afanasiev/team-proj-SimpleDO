@@ -6,6 +6,12 @@
     padding: 50px 0 134px;
   }
   padding: 50px 0 124px;
+  @media screen and (min-width: 1280px) {
+    .container {
+      padding-left: 95px;
+      padding-right: 95px;
+    }
+  }
   .reviews__slider{
     position: relative;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
@@ -55,6 +61,7 @@
 .slider__img {
   display: block;
   margin: 0 auto;
+  border-radius: 50%;
 }
 
 .slider-list {

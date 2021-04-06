@@ -142,8 +142,8 @@ display: none;
 
 .wrapper{
   position: relative;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
   min-width: auto;
   max-width: 767px;
@@ -153,6 +153,8 @@ display: none;
 
   @media (min-width: 768px) {
     max-width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 }

@@ -42,7 +42,7 @@
 }
 
 .hero__title {
-  padding-top: 10px;
+  padding-top: 20px;
   margin-top: 0px;
   margin-bottom: 30px;
   font-weight: 800;
@@ -81,8 +81,8 @@
 }
 
 .hero__subtext {
-  margin-top: 5px;
-  margin-bottom: 30px;
+  margin-top: 1px;
+  margin-bottom: 29px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.571;
@@ -114,6 +114,7 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   padding: 18px 5px;
+  padding-bottom: 16px;
   cursor: pointer;
 
   @media screen and (min-width: 768px) {

@@ -8,6 +8,10 @@ display: flex;
 min-height: 90px;
 align-items: center;
 
+  @media screen and (min-width: 768px) {
+    min-height: 130px;
+  }
+
 }
 
 .menu-toggle__icon{
@@ -93,17 +97,20 @@ align-items: center;
       text-align: center;
    }
 .menu__button{
-    background-color: rgba(17,21,24,0.01);
-    border: solid 2px var(--orange-color-text);
-    color: var(--orange-color-text);
-    min-width: 260px;
-    min-height: 48px;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 12px;
-    cursor: pointer;
-    @media screen and (max-width: 1279px) {
-      margin-left: 239px;
+  background-color: rgba(17,21,24,0.01);
+  border: solid 2px var(--orange-color-text);
+  color: var(--orange-color-text);
+  min-width: 260px;
+  min-height: 48px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  @media screen and (max-width: 1279px) {
+    margin-left: 239px;
+  }
+  @media screen and (min-width: 768px) {
+      margin-left: 210px;
   }
 }
 .header__container__menu__button{

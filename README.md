@@ -1,4 +1,4 @@
-# parcel-project-template
+# team-proj-SimpleDO
 
 ## Зависимости
 

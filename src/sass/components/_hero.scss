@@ -20,9 +20,9 @@
 }
 
 .hero__offer {
-  @media screen and (min-width: 768px) {
-    padding-left: 20px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   padding-left: 20px;
+  // }
 
   @media screen and (min-width: 1280px) {
     padding-bottom: 140px;
@@ -114,14 +114,15 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   padding: 18px 5px;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     display: inline-block;
-    
+
   }
 
   @media screen and (min-width: 1280px) {
-    
+
     font-size: 14px;
     line-height: 1.21;
     width: 354px;
@@ -148,7 +149,7 @@
     }
 
     @media screen and (min-width: 768px) {
-      max-width: 376px;
+      max-width: 356px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -156,5 +157,5 @@
       padding-bottom: 0px;
       padding-top: 60px;
     }
-    
+
 }

@@ -77,14 +77,10 @@ $slick-opacity-not-active: 0.25 !default;
     padding: 0;
     border: none;
     outline: none;
-    @media screen and (max-width: 480px) {
-      bottom: 11px;
-    }
-    @media screen and (min-width: 481px) and (max-width: 768px) {
+    bottom: -85px;
+
+    @media screen and (min-width: 768px) {
       top: 50%;
-    }
-    @media screen and (min-width: 769px) {
-      top: 40%;
     }
     &:hover, &:focus {
         outline: none;
@@ -112,7 +108,7 @@ $slick-opacity-not-active: 0.25 !default;
       left: -15px;
     }
     @media screen and (min-width: 1280px) {
-      left: 15px;
+      left: 5px;
     }
     // @media screen and (min-width: 1680px) {
     //   left: -87px;
@@ -133,7 +129,7 @@ $slick-opacity-not-active: 0.25 !default;
       right: -15px;
     }
     @media screen and (min-width: 1280px) {
-      right: 15px;
+      right: 5px;
     }
     // @media screen and (min-width: 1680px) {
     //   right: -87px;
@@ -149,16 +145,15 @@ $slick-opacity-not-active: 0.25 !default;
 
 /* Dots */
 
-.slick-dotted.slick-slider {
-    margin-bottom: 30px;
-}
-
 .slick-dots {
     display: block;
     text-align: center;
     padding: 0;
     margin: 0;
     width: 100%;
+    position: absolute;
+    bottom: -94px;
+    left: 0;
     li {
         position: relative;
         display: inline-block;

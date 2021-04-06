@@ -1,8 +1,8 @@
 // .guarantee {
-//   padding: 50px 0 0 0;
+//   padding-top: 50px;
 
 //   @media screen and (min-width: 1280px) {
-//     padding: 130px 0 0 0;
+//     padding-top: 130px;
 //   }
 // }
 
@@ -64,11 +64,10 @@
 }
 
 .guarantee__list {
-  position: relative;
 }
 
 .guarantee__item {
-  margin-left: 7px;
+  position: relative;
   padding-left: 28px;
 
   @media screen and (min-width: 768px) {
@@ -76,7 +75,6 @@
   }
 
   @media screen and (min-width: 1280px) {
-    margin-left: 11px;
     padding-left: 41px;
   }
 }
@@ -92,11 +90,13 @@
 
 .guarantee__item::before {
   content: '';
-  width: 14.67px;
+
+  width: 15px;
   height: 20px;
   position: absolute;
-  top: 1;
-  left: 0;
+  top: 0;
+  left: -7.5px;
+  justify-content: center;
   background-image: url(../images/guarantee-fire.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -104,5 +104,6 @@
   @media screen and (min-width: 1280px) {
     width: 22px;
     height: 30px;
+    left: -10px;
   }
 }

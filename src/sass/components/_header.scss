@@ -2,7 +2,7 @@ a{
   text-decoration: none;
 }
 .header__container{
-   
+
 justify-content: space-between;
 display: flex;
 min-height: 90px;
@@ -15,6 +15,7 @@ align-items: center;
 }
 .menu-toggle{
   border: none;
+  cursor: pointer;
   background-color:  var(--main-background-color);
     @media screen and (min-width: 1280px) {
     display: none;
@@ -26,37 +27,42 @@ align-items: center;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-bottom: 42px;
     padding-top: 30px;
+    @media (min-width: 768px) {
+      padding-top: 25px;
+  }
     background-color: rgba(17,21,24,0.9);
     z-index: 10;
     transform: translateX(300%);
     transition: transform 250ms ease-in-out;
   }
-  
+
   .menu-container.is-open {
     transform: translateX(0);
   }
-  
+
   .menu-container .menu-toggle {
     position: absolute;
-    top: 35px;
-    right: 25px;
+    top: 5px;
+    cursor: pointer;
+    @media (min-width: 768px) {
+      top: 8px;
+  }
+    right: 26px;
     background-color: rgba(17,21,24,0.001);
     padding: 0px;
     border: none;
     fill: var(--main-background-color);
-    
+
   }
-  
+
   .mobile-menu {
     padding: 0;
     margin: 0;
     list-style: none;
   }
-    
+
   .mobile-menu__link {
     display: block;
     color: var(--main-background-color);
@@ -66,7 +72,7 @@ align-items: center;
     color: var(--orange-color-text);
   }
 }
-  
+
   .mobile-menu {
     font-weight: 800;
     font-size: 20px;
@@ -76,9 +82,9 @@ align-items: center;
     @media screen and (min-width: 768px) {
       margin-left: 218px;
   }
-      
+
   }
-  
+
 .center{
       text-align: center;
    }
@@ -91,6 +97,7 @@ align-items: center;
     margin-left: 10px;
     margin-right: 10px;
     font-size: 12px;
+    cursor: pointer;
     @media screen and (max-width: 1279px) {
       margin-left: 239px;
   }
@@ -131,7 +138,20 @@ display: none;
 .header__container__menu__item:not(:last-child){
       margin-right: 40px;
            }
-    
 
+.wrapper{
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  min-width: auto;
+  max-width: 767px;
+  @media (min-width: 480px) {
+    max-width: 480px;
+  }
 
-  
+  @media (min-width: 768px) {
+    max-width: 768px;
+}
+
+}

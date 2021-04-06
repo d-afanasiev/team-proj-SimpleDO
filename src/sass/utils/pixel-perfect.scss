@@ -1,0 +1,19 @@
+HTML {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  /* По умолчанию мобильный макет */
+  background-image: url('../images/pixel-perfect/hellen-mobile.jpg');
+
+  @media (min-width: 768px) {
+    background-image: url('../images/pixel-perfect/hellen-tablet.jpg'); /* Планшетный макет */
+  }
+
+  @media (min-width: 1680px) {
+    background-image: url('../images/pixel-perfect/hellen-desktop.jpg'); /* Десктопный макет */
+  }
+}
+
+BODY {
+  opacity: 0.5;
+}

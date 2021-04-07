@@ -1,5 +1,17 @@
 .about {
   color: var(--main-color);
+  padding-top: 39px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    padding-top: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-weight: 800;
+    font-size: 46px;
+    padding-top: 130px;
+  }
 }
 
 .about__title {
@@ -8,17 +20,17 @@
   line-height: 130%;
   letter-spacing: 0.03em;
   color: currentColor;
-  margin: 39px 0 20px 0;
+  margin: 0 0 20px 0;
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
-    margin: 50px 0 30px 0;
+    margin: 0 0 30px 0;
   }
 
   @media screen and (min-width: 1280px) {
     font-weight: 800;
     font-size: 46px;
-    margin: 130px 0 50px 0;
+    margin: 0 0 50px 0;
   }
 }
 

@@ -1,26 +1,19 @@
 .program {
   margin: 0 auto;
-    // min-width: 320px;
+  padding-bottom: 20px;
 
   background-color: var(--main-color);
-
-  // position: relative;
-  // height: 1130px;
   z-index: 1;
 
   outline: 1px solid white;
-
-  @media screen and (max-width: 480px) {
-    overflow-x: hidden;
-  }
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 100px;
   }
 
   &__title {
-    margin: 0;
-    padding: 50px 0 43px 0;
+    margin: 50px 0 43px 0;
 
     text-align: center;
 
@@ -31,7 +24,7 @@
     }
 
     @media screen and (min-width: 1268px) {
-      padding: 120px 0 100px 0;
+      margin: 120px 0 100px 0;
       font-weight: 800;
       font-size: 46px;
       line-height: 60px;
@@ -43,6 +36,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 
     @media screen and (min-width: 768px) {
       padding-left: 100px;
@@ -52,6 +46,37 @@
       padding-left: 0;
       flex-direction: unset;
       align-items:unset ;
+    }
+  }
+
+  &__list::after {
+    content: "";
+    background-image: url("../images/program-img.jpg");
+    width: 176px;
+    height: 110px;
+    position: absolute;
+    background-size: cover;
+    opacity: .5;
+    right: -56px;
+    bottom: -39px;
+
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      width: 384px;
+      height: 280px;
+
+      bottom: -100px;
+      right: -14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: url("../images/program-img.jpg");
+      width: 760px;
+      height: 370px;
+
+      bottom: -130px;
+      left: -315px;
     }
   }
 }
@@ -65,7 +90,6 @@
     top: 281px;
 
     border-bottom: 1px solid var(--main-background-color);
-    // height: 281px;
   }
 }
 
@@ -84,7 +108,7 @@
   @media screen and (min-width: 1280px) {
     padding-left: 0;
     border-left: none;
-    padding-right: 30px;
+    margin-right: 30px;
     border-top: 1px solid var(--main-background-color);
   }
 
@@ -115,39 +139,9 @@
     border-image-slice: 1;
 
     @media screen and (min-width: 1280px) {
+      margin-right: 0;
       border-left: none;
       border-top: 1px solid var(--main-background-color);
-    }
-  }
-
-  &:last-child::after {
-    content: "";
-    background-image: url("../images/program-img.jpg");
-    width: 176px;
-    height: 110px;
-    position: absolute;
-    background-size: cover;
-    opacity: 0.5;
-
-    z-index: 1;
-
-    left: 110px;
-    top: 72px;
-
-    @media screen and (min-width: 768px) {
-      width: 384px;
-      height: 280px;
-
-      top: -55px;
-      left: 267px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      background-image: url("../images/program-img.jpg");
-      width: 760px;
-      height: 370px;
-      top: 408px;
-      left: -1290px;
     }
   }
 
@@ -164,9 +158,9 @@
 
     @media screen and (min-width: 1280px) {
       font-size: 20px;
-      padding-top: 60px;
-      padding-bottom: 25px;
-      margin-bottom: 0;
+      margin-top: 60px;
+      margin-bottom: 25px;
+      // margin-bottom: 0;
     }
   }
 
@@ -209,7 +203,8 @@
     }
 
     @media screen and (min-width: 1280px) {
-      display: block;;
+      display: block;
+      margin-bottom: 0;
     }
   }
 
@@ -244,7 +239,6 @@
 
   font-weight: 500;
   letter-spacing: 0.08em;
-  // opacity: 50%;
 
   color: rgba(185, 185, 185, 0.5);
 

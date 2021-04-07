@@ -20,9 +20,7 @@
 }
 
 .hero__offer {
-  // @media screen and (min-width: 768px) {
-  //   padding-left: 20px;
-  // }
+  
 
   @media screen and (min-width: 1280px) {
     padding-bottom: 140px;
@@ -31,18 +29,24 @@
 
 .hero__offer--box {
   width: 280px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  
 
   @media screen and (min-width: 768px) {
     width: 332px;
+    margin-bottom: 40px;
+    padding-top: 40px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 600px;
+    padding-top: 50px;
   }
 }
 
 .hero__title {
-  padding-top: 10px;
+  
   margin-top: 0px;
   margin-bottom: 30px;
   font-weight: 800;
@@ -53,7 +57,7 @@
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.30;
-    padding-top: 40px;
+    
   }
 
   @media screen and (min-width: 1280px) {
@@ -82,7 +86,7 @@
 
 .hero__subtext {
   margin-top: 5px;
-  margin-bottom: 30px;
+  
   font-weight: 700;
   font-size: 14px;
   line-height: 1.571;
@@ -91,7 +95,7 @@
   @media screen and (min-width: 1280px) {
     font-size: 20px;
     line-height: 1.65;
-    margin-bottom: 40px;
+    
   }
 }
 
@@ -136,16 +140,22 @@
 }
 
 .hero__picture {
+  padding-top: 20px;
+
   @media screen and (min-width: 768px) {
-    padding-top: 10px;
+    padding-top: 40px;
+    
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 70px;
     
   }
 
 }
 
 .hero__img {
-    padding-top: 30px;
-    padding-bottom: 47px;
+    
     min-width: 208px;
     margin-left: auto;
     margin-right: auto;
@@ -160,8 +170,7 @@
 
     @media screen and (min-width: 1280px) {
       max-width: 617px;
-      padding-bottom: 0px;
-      padding-top: 60px;
+      
     }
 
 }

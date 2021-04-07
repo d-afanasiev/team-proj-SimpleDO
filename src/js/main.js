@@ -27,7 +27,7 @@ $(function () {
   });
 });
 
-$(".header__container__menu__link, .hero__btn, .menu__button").click(function() {
+$(".header__container__menu__link, .hero__btn").click(function() {
     var elementClick = $(this).attr("href")
     var destination = $(elementClick).offset().top;
     jQuery("html:not(:animated),body:not(:animated)").animate({
@@ -36,7 +36,7 @@ $(".header__container__menu__link, .hero__btn, .menu__button").click(function() 
     return false;
 });
 
-$(".mobile-menu__link").click(function() {
+$(".mobile-menu__link, .menu__button").click(function() {
   var elementClick = $(this).attr("href")
   var mobileMenu = document.querySelector('.js-menu-container')
   var destination = $(elementClick).offset().top;

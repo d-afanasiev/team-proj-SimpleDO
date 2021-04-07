@@ -41,6 +41,7 @@ $(".mobile-menu__link").click(function() {
   var mobileMenu = document.querySelector('.js-menu-container')
   var destination = $(elementClick).offset().top;
   mobileMenu.classList.remove('is-open');
+  bodyScrollLock.enableBodyScroll(document.body);
     jQuery("html:not(:animated),body:not(:animated)").animate({
         scrollTop: destination
     }, 500);

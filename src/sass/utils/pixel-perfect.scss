@@ -4,13 +4,19 @@ HTML {
 
   /* По умолчанию мобильный макет */
   background-image: url('../images/pixel-perfect/hellen-mobile.jpg');
+  // background-position-y: 55px;/* Это помагает попасть картинкой в свою секцию не меняя соседние */
+  // background-position-x: 55px;/* Это помагает попасть картинкой в свою секцию не меняя соседние */
 
   @media (min-width: 768px) {
     background-image: url('../images/pixel-perfect/hellen-tablet.jpg'); /* Планшетный макет */
+    // background-position-y: -76px;/* Это помагает попасть картинкой в свою секцию не меняя соседние */
+    // background-position-x: -76px;/* Это помагает попасть картинкой в свою секцию не меняя соседние */
   }
 
   @media (min-width: 1680px) {
     background-image: url('../images/pixel-perfect/hellen-desktop.jpg'); /* Десктопный макет */
+    // background-position-y: -73px;/* Это помагает попасть картинкой в свою секцию не меняя соседние */
+    // background-position-x: -73px;/* Это помагает попасть картинкой в свою секцию не меняя соседние */
   }
 }
 

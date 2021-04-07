@@ -16,6 +16,7 @@
   transform: translateY(-2px);
   width: 100%;
   background-image: linear-gradient(to bottom, #111518 70%, #ffffff 30%);
+  padding-top: 50px;
 }
 
 .benefits__title {
@@ -26,15 +27,13 @@
   letter-spacing: 0.03em;
   color: var(--main-background-color);
   margin: 0;
-  padding-right: 120px;
-  padding-bottom: 30px;
-  padding-top: 50px;
+  margin-right: 120px;
+  margin-bottom: 30px;
   @media screen and (min-width: 768px) {
-    padding-right: 140px;
+    margin-right: 140px;
     font-size: 26px;
     line-height: 1.3;
     text-align: center;
-    padding-right: 0;
   }
 }
 

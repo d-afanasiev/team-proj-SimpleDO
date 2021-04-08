@@ -115,7 +115,13 @@ align-items: center;
     font-family: Montserrat,sans-serif;
     font-style: normal;
     font-weight: 700;
-    
+    transition: background-color var(--animation-dur) var(--animation-type), color var(--animation-dur) var(--animation-type);
+
+    &:hover, :focus {
+      background-color: var(--orange-color-text);
+      color: var(--main-background-color);
+    }
+
     @media screen and (max-width: 1279px) {
       margin-left: auto;
   }
@@ -148,7 +154,7 @@ display: none;
   background-color: rgba(17,21,24,.01);
        @media screen and (min-width: 768px) {
       display: none;
-     
+
   }
 }
 .header__container__menu_list{

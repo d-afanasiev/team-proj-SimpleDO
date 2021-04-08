@@ -20,7 +20,7 @@
 }
 
 .hero__offer {
-  
+
 
   @media screen and (min-width: 1280px) {
     padding-bottom: 140px;
@@ -31,7 +31,7 @@
   width: 280px;
   margin-bottom: 30px;
   padding-top: 10px;
-  
+
 
   @media screen and (min-width: 768px) {
     width: 332px;
@@ -46,7 +46,7 @@
 }
 
 .hero__title {
-  
+
   margin-top: 0px;
   margin-bottom: 30px;
   font-weight: 800;
@@ -57,7 +57,7 @@
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.30;
-    
+
   }
 
   @media screen and (min-width: 1280px) {
@@ -86,7 +86,7 @@
 
 .hero__subtext {
   margin-top: 5px;
-  
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.571;
@@ -95,7 +95,7 @@
   @media screen and (min-width: 1280px) {
     font-size: 20px;
     line-height: 1.65;
-    
+
   }
 }
 
@@ -118,10 +118,18 @@
   line-height: 1.25;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   cursor: pointer;
   letter-spacing: 0.08em;
+  border: 2px solid var(--orange-color-text);
+
+  transition: background-color var(--animation-dur) var(--animation-type), color var(--animation-dur) var(--animation-type);
+
+  &:hover, :focus {
+    background-color: var(--main-background-color);
+    color: var(--orange-color-text);
+  }
 
   @media screen and (min-width: 768px) {
     display: inline-block;
@@ -134,8 +142,8 @@
     font-size: 14px;
     line-height: 1.21;
     width: 354px;
-    
-    
+
+
   }
 }
 
@@ -144,18 +152,18 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 40px;
-    
+
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 70px;
-    
+
   }
 
 }
 
 .hero__img {
-    
+
     min-width: 208px;
     margin-left: auto;
     margin-right: auto;
@@ -170,7 +178,7 @@
 
     @media screen and (min-width: 1280px) {
       max-width: 617px;
-      
+
     }
 
 }

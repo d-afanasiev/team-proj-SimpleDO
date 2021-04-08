@@ -128,6 +128,11 @@ p {
   color: var(--main-background-color);
   background: transparent;
   border: 1px solid var(--main-background-color);
+  transition: border var(--animation-dur) var(--animation-type);
+
+  &:hover {
+   border: 1px solid var(--orange-color-text);
+  }
 
   @media screen and (min-width: 768px) {
     width: 390px;
@@ -184,6 +189,14 @@ p {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-top: 50px;
+
+  transition: background-color var(--animation-dur) var(--animation-type), color var(--animation-dur) var(--animation-type);
+
+  &:hover,
+  :focus {
+    background-color: var(--main-background-color);
+    color: var(--orange-color-text);
+  }
 
   @media screen and (min-width: 768px) {
     margin-top: 30px;

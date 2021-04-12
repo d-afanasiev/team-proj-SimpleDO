@@ -3,7 +3,6 @@
 $(document).ready(function () {
   $('.reviews__slider').slick({
     dots: true,
-    adaptiveHeight: true,
     dotsClass: 'slick-dots slider__dots',
     customPaging: function(slick, index) {
       var image = $(slick.$slides[index]).find('.slider__img').attr('src');
